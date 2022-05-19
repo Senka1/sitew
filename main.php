@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="css.css"
 </head>
 <body>
+    <?php
+    $a='d'
+         echo $a
+    ?>
     <header>
         <div class="left">
             <a href="main.html"><img src="logo.svg" alt="logo" class="logo"></a>
