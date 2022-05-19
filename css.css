@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+body,html {
+    background-image: url("wallpaper.png");
+    background-size:cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    font-family: 'Klee One', cursive;
+}
+ 
+li,a, button {
+    font-size: 26px;
+    font-weight: 400;
+    text-decoration: none;
+    color:rgb(235, 235, 235)
+}
+
+header {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30, 10%;
+    height: 100px;
+    background-color: rgb(89, 138, 194);
+}
+
+.logo {
+    cursor: pointer;
+    width: 65px;
+}
+
+.nav_links {
+    list-style: none;
+}
+.nav_links li {
+    display: inline-block;
+    padding: 10px 50px;
+}
+.nav_links li a {
+    transition: all .3s ease 0s;
+}
+.nav_links li a:hover {
+    color:rgb(72, 69, 105);
+    text-shadow:
+    0 0 19px #fff;
+
+} 
+.auth button {
+    padding: 5px 25px;
+    margin-right: 25px;
+    background-color: rgba(35,121,189,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .3s ease 0s;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transform: translateY(-3px)
+}
+.auth button:hover {
+    transform: translateY(0);
+    box-shadow: 0 0px 0px;
+}   
+.left {
+  display: flex;
+  margin: 50px;
+}
+.footer {
+	display: flex;
+  position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 54px;
+  background-color: #312f2f;
+  border-top: 2px solid black;
+  color:white;
+  font-size: 20px;
+}
+
+    /**копия**/
+
+.form-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.form-wrap {
+    width: 550px;
+    background: #ffd500;
+    border-radius: 20px;
+  }
+  .form-wrap *{transition: .1s linear}
+  .profile {
+    width: 240px;
+    float: left;
+    text-align: center;
+    padding: 30px;
+  }
+  form {
+    background: white;
+    float: left;
+    width: calc(100% - 240px);
+    padding: 30px;
+    border-radius: 0 20px 20px 0;
+    color: #7b7b7b; 
+  }
+  .form-wrap:after, form div:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  form div {
+    margin-bottom: 15px;
+    position: relative;
+  }
+  h1 {
+    font-size: 24px;
+    font-weight: 400;
+    position: relative;
+    margin-top: 50px;
+  }
+  
+  
+  /********************** стилизация элементов формы **********************/
+  label, span {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  input[type="text"], input[type="email"] {
+    border-width: 0;
+    outline: none;
+    margin: 0;
+    width: 100%;
+    padding: 10px 15px;
+    background: #e6e6e6;
+  }
+  input[type="text"]:focus, input[type="email"]:focus {
+    box-shadow: inset 0 0 0 2px rgba(0,0,0,.2);
+  }
+  .radio label {
+    position: relative;
+    padding-left: 50px;
+    cursor: pointer;
+    width: 50%;
+    float: left;
+    line-height: 40px;
+  }
+  .radio input {
+    position: absolute;  
+    opacity: 0;
+  }
+  .radio-control {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    background: #e6e6e6;
+    border-radius: 50%;
+    text-align: center;
+  }
+  .male:before {
+    content: "v";
+    font-family: FontAwesome;
+    font-weight: bold;
+  }
+  .female:before {
+    content: "v";
+    font-family: FontAwesome;
+    font-weight: bold;
+  }
+  .radio label:hover input ~ .radio-control,
+  .radiol input:focus ~ .radio-control {
+    box-shadow: inset 0 0 0 2px rgba(0,0,0,.2);
+  }
+  .radio input:checked ~ .radio-control {
+    color: red;
+  }
+  select {
+    width: 100%;
+    cursor: pointer;
+    padding: 10px 15px;
+    outline: 0;
+    border: 0;
+    background: #e6e6e6;
+    color: #7b7b7b;
+    -webkit-appearance: none; /*убираем галочку в webkit-браузерах*/
+    -moz-appearance: none; /*убираем галочку в Mozilla Firefox*/
+  }
+  select::-ms-expand {
+    display: none; /*убираем галочку в IE*/
+  }
+  .select-arrow {
+    position: absolute;
+    top: 38px;
+    right: 15px;
+    width: 0;
+    height: 0;
+    pointer-events: none; /*активизируем показ списка при нажатии на стрелку*/
+    border-style: solid;
+    border-width: 8px 5px 0 5px;
+    border-color: #b9b9b9 transparent transparent transparent;
+  }
+.btnreg {
+    padding: 10px 0;
+    border-width: 10;
+    display: block;
+    width: 250px;
+    margin: 25px auto 0;
+    background: #6260e6;
+    color: white;
+    font-size: 14px;
+    outline: none;
+    text-transform: uppercase;
+    border: 2px solid #3655bd;
+  }
+  .btnreg:hover {
+    position: relative;
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 0;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: .08em;
+    text-shadow: 0 0 1px rgb(0 0 0 / 20%), 0 1px 0 rgb(0 0 0 / 20%);
+    transition: all 0.3s ease;
+  }
