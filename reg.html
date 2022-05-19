@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="css.css"
+</head>
+<body>
+    <header>
+            <div class="left">
+              <a href="main.html"><img src="logo.svg" alt="logo" class="logo"></a>
+              
+              <nav>
+                  <ul class="nav_links">
+                      <li><a href="news.html">Новости</a></li>
+                      <li><a href="#">О нас</a></li>
+                  </ul>  
+              </nav>
+          </div>
+            <div>
+              <a href="reg.html" class="auth"><button>Вход</button></a>
+              <a href="reg.html" class="auth"><button>Регистрация</button></a>
+            </div>
+    </header>
+    <div class="form-wrapper">
+        <div class="form-wrap">
+            <div class="profile"><img src="ava.svg">
+              <h1>Регистрация</h1>
+            </div>
+            <form method="post" action="form.php">
+              <div>
+                <label for="name">Никнейм </label>
+                <input type="text" name="name" required>
+              </div>
+              <div>
+                <label for="password">пэроль</label>
+                <input type="text" name="password" required>
+              </div>
+              <div class="radio">
+                <span>Пол</span>
+                <label>
+                  <input type="radio" name="sex" value="мужской">мужской
+                  <div class="radio-control male"></div>
+                </label>
+                <label>
+                  <input type="radio" name="sex" value="женский">женский
+                  <div class="radio-control female"></div>
+                </label>
+              </div>
+              <div>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" required>
+              </div>
+              <button class="btnreg" type="submit">зарегестрироваться</button> 
+            </form> 
+          </div>
+    </div>
+    <div class="footer">
+      <div>
+          <p>© Бюро находок 2022 - 2022</p>
+      </div>
+  </div>
+</body>
+</html>
